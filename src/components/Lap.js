@@ -13,13 +13,13 @@ return resultString;
 } 
 return (
 <div className="laps" style={{ display: (laps.length) ? 'block' : 'none' }}>
-<h3><span>Lap</span><span>Time</span><span>Total Time</span></h3>
+<h3><span>Activities</span><span>Time</span><span>Total Time</span></h3>
 <ul>
-{laps.map((lap, index) => (
+{laps.map((activity, index) => (
 <li key={index}>
-<span>{`Lap ${index + 1}`}</span>
-<span>{calculateTimeDifference(lap, (index !== 0) ? laps[index - 1] : "00:00:00.00")}</span>
-<span>{lap}</span>
+<span>{`activity ${index + 1}`}</span>
+<span>{calculateTimeDifference(activity, (index !== 0) ? laps[index - 1] : "00:00:00.00")}</span>
+<span>{activity}</span>
 </li>
 ))}
 </ul>
