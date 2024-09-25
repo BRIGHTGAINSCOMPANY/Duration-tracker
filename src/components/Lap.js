@@ -13,7 +13,7 @@ return resultString;
 } 
 return (
 <div className="laps" style={{ display: (laps.length) ? 'block' : 'none' }}>
-<h3><span>Activities</span><span>Time</span><span>Total Time</span></h3>
+<h3><span>Activities</span><span>Duration</span><span>Initial Time</span></h3>
 <ul>
 {laps.map((activity, index) => (
 <li key={index}>

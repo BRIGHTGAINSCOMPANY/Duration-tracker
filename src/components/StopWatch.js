@@ -1,4 +1,3 @@
-// StopWatch.js
 import React, { useState, useEffect } from "react";
 import "./StopWatch.css";
 import Lap from "./Lap";
